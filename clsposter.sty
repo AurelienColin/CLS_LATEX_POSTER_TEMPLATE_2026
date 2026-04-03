@@ -68,8 +68,11 @@
 \setbeamercolor{block title example}{fg=CLSWhite, bg=CLSTeal}
 \setbeamercolor{block body example}{fg=CLSDarkGray, bg=CLSLightGray}
 
-% Item colors handled by itemize templates below — no beamercolor override
-% (beamercolor{item} would color the text, not just the bullet)
+% Item text must match normal text; bullet color is set in templates below.
+% Without this, beamer inherits item fg from "structure" (CLSBlue).
+\setbeamercolor{item}{fg=CLSDarkGray}
+\setbeamercolor{subitem}{fg=CLSDarkGray}
+\setbeamercolor{subsubitem}{fg=CLSDarkGray}
 
 \setbeamercolor{caption name}{fg=CLSBlue}
 
