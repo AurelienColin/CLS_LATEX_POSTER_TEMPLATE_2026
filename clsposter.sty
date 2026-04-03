@@ -170,22 +170,22 @@
           \includegraphics[height=5cm]{\@posterqrcode}}};
     \fi
 
-    % Title — start below logo row
+    % Title — immediately below logo row
     \node[anchor=north west, text=CLSWhite, align=left,
           font=\Huge\bfseries] (titlenode) at
-      ([xshift=3cm, yshift=-9cm]current page.north west)
+      ([xshift=3cm, yshift=-5.5cm]current page.north west)
       {\parbox{0.88\paperwidth}{\@postertitle}};
 
-    % Authors
+    % Authors — tight below title
     \node[anchor=north west, text=CLSWhite, align=left,
           font=\LARGE] (authornode) at
-      ([yshift=-1.5cm]titlenode.south west)
+      ([yshift=-0.5cm]titlenode.south west)
       {\@posterauthor};
 
-    % Institutes
+    % Institutes — tight below authors
     \node[anchor=north west, text=CLSWhite, align=left,
           font=\Large] at
-      ([yshift=-0.8cm]authornode.south west)
+      ([yshift=-0.3cm]authornode.south west)
       {\parbox{0.88\paperwidth}{\@posterinstitute}};
   \end{tikzpicture}%
   \vspace*{\posterheaderheight}%
